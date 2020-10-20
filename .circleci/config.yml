@@ -9,9 +9,9 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: 
-              command: |
-                    mkdir -p test-results
-                    echo "hello world" # run the `echo` command
+            command: |
+                  mkdir -p ~/reports
+                  eslint ./src/ --format junit --output-file ~/reports/eslint.xml
       - store_test_results:
-              path: test-results
+              path: ~/reports
       
