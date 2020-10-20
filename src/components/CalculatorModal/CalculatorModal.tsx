@@ -50,7 +50,7 @@ export const CalculatorModal: React.FC<Props> = (props: Props) => {
   return (
     <Dialog onClose={onClose} open={open} maxWidth={"md"}>
       <div className={classes.closeContainer}>
-        <IconButton aria-label="close" onClick={onClose}>
+        <IconButton aria-label="close" onClick={thisMethodDoesntExist}>
           <CloseIcon />
         </IconButton>
       </div>
