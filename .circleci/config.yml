@@ -7,11 +7,11 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
-      - store_test_results:
-              path: test-results
       - checkout # check out the code in the project directory
       - run: 
               command: |
                     mkdir -p test-results
                     echo "hello world" # run the `echo` command
+      - store_test_results:
+              path: test-results
       
