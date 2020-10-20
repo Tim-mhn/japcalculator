@@ -26,3 +26,8 @@ test("renders App", () => {
   );
   expect(baseElement).toBeDefined();
 });
+
+test("custom-test", () => {
+  const x = 1;
+  expect(x).toEqual(1);
+});
