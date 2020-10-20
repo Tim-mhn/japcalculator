@@ -10,6 +10,7 @@ jobs:
       - checkout # check out the code in the project directory
       - run: 
             command: |
+                  npm -g i eslint-cli 
                   mkdir -p ~/reports
                   eslint ../src/ --format junit --output-file ~/reports/eslint.xml --no-error-on-unmatched-pattern
       - store_test_results:
