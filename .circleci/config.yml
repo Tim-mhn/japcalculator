@@ -11,7 +11,7 @@ jobs:
       - run: 
             command: |
                   mkdir -p ~/reports
-                  eslint ./src/ --format junit --output-file ~/reports/eslint.xml
+                  eslint ../src/ --format junit --output-file ~/reports/eslint.xml --no-error-on-unmatched-pattern
       - store_test_results:
               path: ~/reports
       
