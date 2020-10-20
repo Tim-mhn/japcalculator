@@ -11,5 +11,7 @@ jobs:
               path: test-results
       - checkout # check out the code in the project directory
       - run: 
-              command: echo "hello world" # run the `echo` command
+              command: |
+                    mkdir -p test-results
+                    echo "hello world" # run the `echo` command
       
