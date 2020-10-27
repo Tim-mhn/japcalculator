@@ -1,9 +1,9 @@
-import querystring from "querystring";
+// import querystring from "querystring";
 
 exports.handler = async function(event, context) {
-    const params = querystring.parse(event.body);
+    const body = JSON.parse(event.body);
 
-    var message = params.message;
+    var message = body.message;
     if (!message) message = "Please enter a message"
     
     return {
