@@ -3,8 +3,8 @@ exports.handler = async function(event, context) {
     // if (!message) message= "Please enter a message !"
     // var message = event.body.message
     return {
-      statusCode:200,
-      body: event
+      statusCode:200,   
+      body: event.body
     };
   };
   
